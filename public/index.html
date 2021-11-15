@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+    />
+    <title>Document</title>
+  </head>
+  <body class="bg-black">
+    <nav
+      class="
+        top-0
+        absolute
+        z-50
+        w-full
+        flex flex-wrap
+        items-center
+        justify-between
+        px-2
+        py-3
+      "
+    >
+      <div
+        class="
+          container
+          px-4
+          mx-auto
+          flex flex-wrap
+          items-center
+          justify-between
+        "
+      >
+        <div
+          class="
+            w-full
+            relative
+            flex
+            justify-between
+            lg:w-auto lg:static lg:block lg:justify-start
+          "
+        >
+          <a
+            href="#home"
+            class="
+              text-sm
+              font-bold
+              leading-relaxed
+              inline-block
+              mr-4
+              py-2
+              whitespace-nowrap
+              uppercase
+              text-white
+            "
+            >Home
+          </a>
+          <button
+            onClick="toggleNavbar('navbar-collapse')"
+            type="button"
+            class="
+              cursor-pointer
+              text-xl
+              leading-none
+              px-3
+              py-1
+              border border-solid border-transparent
+              rounded
+              bg-transparent
+              block
+              lg:hidden lg:outline-none
+              focus:outline-none
+            "
+          >
+            <i class="text-white fas fa-bars"></i>
+          </button>
+        </div>
+        <div
+          id="navbar-collapse"
+          class="
+            lg:flex
+            flex-grow
+            items-center
+            bg-white
+            lg:bg-transparent lg:shadow-none
+            hidden
+          "
+        >
+          <ul class="flex flex-col lg:flex-row list-none mr-auto">
+            <li class="flex items-center">
+              <a
+                href="#ipad"
+                class="
+                  lg:text-white lg:hover:text-gray-300
+                  text-gray-800
+                  px-3
+                  py-4
+                  lg:py-2
+                  flex
+                  items-center
+                  text-xs
+                  uppercase
+                  font-bold
+                "
+                ><i
+                  class="
+                    lg:text-gray-300
+                    text-gray-500
+                    fas
+                    fa-tablet-alt
+                    text-lg
+                    leading-lg
+                    mr-2
+                  "
+                ></i
+                >Ipad</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </body>
+  <script>
+    function toggleNavbar(collapseId) {
+      document.getElementById(collapseId).classList.toggle("hidden");
+      document.getElementById(collapseId).classList.toggle("block");
+    }
+  </script>
+</html>
